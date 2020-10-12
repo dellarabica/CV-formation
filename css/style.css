@@ -1,37 +1,107 @@
-.personalInfo{
-    font-size:14px;
-}
-
 ul li{
     list-style:none;
 }
 
-
-header, main{
-    display: block;
-    padding: 20px;
-}
-
 .title{
-    font-size:16px;
+    font-size:48px;
     text-align: center;
 }
 
-.Software{
-    float: left;
+body{
+    margin: 0;
+    padding: 0px;
+    color: #000;
+    background-color: #ECF0F1;
 }
 
-.Software table {
-    border-style: solid;
-    border-color: #ffffff;
-    border-radius: 1px;
+/* HEADER */
+header {
+    background-color: #C0392B;
+    display: flex;
+    letter-spacing: 2px;
+}
+    
+header .info {
+      padding: 40px;
+      flex: 4;
+      color: #ECF0F1; }
+
+header .info h1 {
+        margin-block-start: 0; }
+
+header .info ul {
+        list-style: none; }
+
+header .info ul a {
+        text-decoration: none; 
+          color: #ECF0F1; }
+
+header .info ul a:hover {
+          font-weight: 600;
+          text-decoration: none; 
+    }
+
+header .logo {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+header .logo img {
+        height: 200px; 
+        overflow:hidden;
+        -webkit-border-radius:50px;
+        -moz-border-radius:50px;
+        border-radius:100px;
 }
 
-.Software table tr{
-    border-color: #ffffff;
-    text-align: center;
-}
+/* MAIN */
+main section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 70px;
+        padding-top: 70px; }
 
-.Software table tr td ul{
-    text-align: left;
-}
+        main section .title {
+          width: 500px;
+          letter-spacing: 2px;
+          text-align: center;
+          font-size: 1.8em;
+          background-color: #C0392B;
+          color: #ECF0F1;
+          margin-bottom: 70px;}
+      main .Presentation {
+        background-color: #3e5f83; }
+        main .Presentation .texte {
+          letter-spacing: 1px;
+          line-height: 1.4;
+          background-color: #ECF0F1;
+          width: 80%;
+          padding: 30px;
+          text-align: justify;}
+      main .Experiences {
+        background-color: #3e5f83; }
+
+/* FOOTER */
+
+footer .media {
+    background-color: #3e5f83;
+    display: flex;
+    justify-content: center; }
+    footer .media ul {
+      display: inline-flex;
+      padding-inline-start: 0em;
+      list-style: none; }
+      footer .media ul a {
+        transition: 0.7s; }
+      footer .media ul li {
+        margin: 10px; }
+      footer .media ul img {
+        width: 75px; }
+    footer .media ul:hover a {
+      opacity: 0.4;
+      filter: blur(1px); }
+    footer .media ul:hover a:hover {
+      opacity: 1;
+      filter: blur(0); }

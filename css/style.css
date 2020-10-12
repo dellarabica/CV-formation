@@ -1,17 +1,13 @@
-ul li{
-    list-style:none;
-}
-
-.title{
-    font-size:48px;
-    text-align: center;
-}
-
 body{
     margin: 0;
     padding: 0px;
     color: #000;
+    font-family: "Helvetica", sans-serif;
     background-color: #ECF0F1;
+}
+
+ul li{
+    list-style:none;
 }
 
 /* HEADER */
@@ -70,16 +66,42 @@ main section {
           font-size: 1.8em;
           background-color: #C0392B;
           color: #ECF0F1;
-          margin-bottom: 70px;}
+          margin-bottom: 70px;
+        }
       main .Presentation {
-        background-color: #3e5f83; }
+        background-color: #3e5f83; 
+    }
         main .Presentation .texte {
           letter-spacing: 1px;
           line-height: 1.4;
           background-color: #ECF0F1;
           width: 80%;
           padding: 30px;
-          text-align: justify;}
+          text-align: justify;
+        }
+
+          main .Etudes .flx{
+              display:flex;
+              flex-direction: row;
+            background-color: inherit;
+            color:#000;
+          }        
+
+        main .Etudes .flx .et1, main .Etudes .flx .et2, main .Etudes .flx .et3{
+            width: 350px;
+            flex: 2;
+            border:1px solid #C0392B;
+            margin-right: 40px;
+            margin-left: 40px;
+            text-align: justify;
+            padding: 10px;
+        }
+
+        main .Etudes .flx .et1 h2, .Etudes .flx .et2 h2,.Etudes .flx .et3 h2 {
+            text-decoration: underline;
+            font-size: 16px;
+            text-align: center;
+        }
       main .Experiences {
         background-color: #3e5f83; }
 

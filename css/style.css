@@ -102,6 +102,11 @@ main section {
             font-size: 16px;
             text-align: center;
         }
+
+        main .Etudes .flx .et1 img, .Etudes .flx .et2 img,.Etudes .flx .et3 img {
+            height: 125px;
+            margin-left: 20px;
+        }
       main .Experiences {
         background-color: #3e5f83; }
 

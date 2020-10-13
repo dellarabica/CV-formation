@@ -15,10 +15,6 @@ body {
     font-family: SeuratProDB;
 }
 
-ul li {
-    list-style: none;
-}
-
 
 /* HEADER */
 
@@ -80,7 +76,7 @@ main section {
 }
 
 main section .title {
-    width: 500px;
+    width: 550px;
     letter-spacing: 2px;
     text-align: center;
     font-size: 1.6em;
@@ -102,7 +98,9 @@ main .Presentation .texte {
     text-align: justify;
 }
 
-main .Etudes .flx {
+main .Etudes .flx,
+.Experiences .flx,
+.Competences .flx {
     display: flex;
     flex-direction: row;
     background-color: inherit;
@@ -110,20 +108,33 @@ main .Etudes .flx {
 }
 
 main .Etudes .flx .et1,
-main .Etudes .flx .et2,
-main .Etudes .flx .et3 {
+.Etudes .flx .et2,
+.Etudes .flx .et3,
+.Experiences .flx .exp1,
+.Experiences .flx .exp2,
+.Competences .flx .cp1,
+.Competences .flx .cp2,
+.Competences .flx .cp3,
+.Competences .flx .cp4 {
     width: 350px;
     flex: 2;
-    border: 1px solid #C0392B;
+    border: 3px solid #C0392B;
     margin-right: 40px;
     margin-left: 40px;
-    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
 }
 
 main .Etudes .flx .et1 h2,
 .Etudes .flx .et2 h2,
-.Etudes .flx .et3 h2 {
+.Etudes .flx .et3 h2,
+.Experiences .flx .exp1 h2,
+.Experiences .flx .exp2 h2,
+.Competences .flx .cp1 h2,
+.Competences .flx .cp2 h2,
+.Competences .flx .cp3 h2,
+.Competences .flx .cp4 h2 {
     text-decoration: underline;
     font-size: 16px;
     text-align: center;
@@ -136,8 +147,46 @@ main .Etudes .flx .et1 img,
     margin-left: 20px;
 }
 
+main .Etudes .flx .et1 p,
+.Etudes .flx .et2 p,
+.Etudes .flx .et3 p {
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.4;
+}
+
 main .Experiences {
     background-color: #3e5f83;
+}
+
+main .Experiences .flx .exp1 .job,
+.Experiences .flx .exp2 .job {
+    text-align: center;
+    font-style: bold;
+    font-size: 15px;
+    color: #000;
+}
+
+main .Experiences .flx .exp1 .ctt,
+.Experiences .flx .exp2 .ctt {
+    text-align: justify;
+    font-style: bold;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+main .Competences .flx .cp2 .img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+main .Competences .flx .cp4 ul {
+    text-align: center;
+    margin-left: -40px;
+    list-style-type: none;
+    font-size: 16px;
 }
 
 

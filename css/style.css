@@ -1,11 +1,13 @@
 @font-face {
-  font-family: SeuratProDB;
-  src: local("FOT-Seurat Pro DB"),
-       url("FOT-Seurat Pro DB.otf");
-  font-weight: bold;
-} /* Sert à importer une police */
+    font-family: SeuratProDB;
+    src: local("FOT-Seurat Pro DB"), url("FOT-Seurat Pro DB.otf");
+    font-weight: bold;
+}
 
-body{
+
+/* Sert à importer une police */
+
+body {
     margin: 0;
     padding: 0px;
     color: #000;
@@ -13,130 +15,164 @@ body{
     font-family: SeuratProDB;
 }
 
-ul li{
-    list-style:none;
+ul li {
+    list-style: none;
 }
 
+
 /* HEADER */
+
 header {
     background-color: #C0392B;
     display: flex;
     letter-spacing: 2px;
 }
-    
+
 header .info {
-      font-size: 0.9em;
-      padding: 40px;
-      flex: 4;
-      color: #ECF0F1; }
-
-header .info h1 {
-        margin-block-start: 0; }
-
-header .info ul {
-        list-style: none; }
-
-header .info ul a {
-        text-decoration: none; 
-          color: #ECF0F1; }
-
-header .info ul a:hover {
-          font-weight: 600;
-          text-decoration: none; 
-    }
-
-header .logo {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-
-header .logo img {
-        height: 200px; 
-        overflow:hidden;
-        -webkit-border-radius:50px;
-        -moz-border-radius:50px;
-        border-radius:100px;
+    font-size: 0.9em;
+    padding: 40px;
+    flex: 4;
+    color: #ECF0F1;
 }
 
+header .info h1 {
+    margin-block-start: 0;
+}
+
+header .info ul {
+    list-style: none;
+}
+
+header .info ul a {
+    text-decoration: none;
+    color: #ECF0F1;
+}
+
+header .info ul a:hover {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header .logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo img {
+    height: 200px;
+    overflow: hidden;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 100px;
+}
+
+
 /* MAIN */
+
 main section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 70px;
-        padding-top: 70px; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
 
-        main section .title {
-          width: 500px;
-          letter-spacing: 2px;
-          text-align: center;
-          font-size: 1.6em;
-          background-color: #C0392B;
-          color: #ECF0F1;
-          margin-bottom: 70px;
-        }
-      main .Presentation {
-        background-color: #3e5f83; 
-    }
-        main .Presentation .texte {
-          letter-spacing: 1px;
-          line-height: 1.4;
-          background-color: #ECF0F1;
-          width: 80%;
-          padding: 30px;
-          text-align: justify;
-        }
+main section .title {
+    width: 500px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1.6em;
+    background-color: #C0392B;
+    color: #ECF0F1;
+    margin-bottom: 70px;
+}
 
-          main .Etudes .flx{
-              display:flex;
-              flex-direction: row;
-            background-color: inherit;
-            color:#000;
-          }        
+main .Presentation {
+    background-color: #3e5f83;
+}
 
-        main .Etudes .flx .et1, main .Etudes .flx .et2, main .Etudes .flx .et3{
-            width: 350px;
-            flex: 2;
-            border:1px solid #C0392B;
-            margin-right: 40px;
-            margin-left: 40px;
-            text-align: justify;
-            padding: 10px;
-        }
+main .Presentation .texte {
+    letter-spacing: 1px;
+    line-height: 1.4;
+    background-color: #ECF0F1;
+    width: 80%;
+    padding: 30px;
+    text-align: justify;
+}
 
-        main .Etudes .flx .et1 h2, .Etudes .flx .et2 h2,.Etudes .flx .et3 h2 {
-            text-decoration: underline;
-            font-size: 16px;
-            text-align: center;
-        }
+main .Etudes .flx {
+    display: flex;
+    flex-direction: row;
+    background-color: inherit;
+    color: #000;
+}
 
-        main .Etudes .flx .et1 img, .Etudes .flx .et2 img,.Etudes .flx .et3 img {
-            height: 125px;
-            margin-left: 20px;
-        }
-      main .Experiences {
-        background-color: #3e5f83; }
+main .Etudes .flx .et1,
+main .Etudes .flx .et2,
+main .Etudes .flx .et3 {
+    width: 350px;
+    flex: 2;
+    border: 1px solid #C0392B;
+    margin-right: 40px;
+    margin-left: 40px;
+    text-align: justify;
+    padding: 10px;
+}
+
+main .Etudes .flx .et1 h2,
+.Etudes .flx .et2 h2,
+.Etudes .flx .et3 h2 {
+    text-decoration: underline;
+    font-size: 16px;
+    text-align: center;
+}
+
+main .Etudes .flx .et1 img,
+.Etudes .flx .et2 img,
+.Etudes .flx .et3 img {
+    height: 125px;
+    margin-left: 20px;
+}
+
+main .Experiences {
+    background-color: #3e5f83;
+}
+
 
 /* FOOTER */
 
 footer .media {
     background-color: #3e5f83;
     display: flex;
-    justify-content: center; }
-    footer .media ul {
-      display: inline-flex;
-      padding-inline-start: 0em;
-      list-style: none; }
-      footer .media ul a {
-        transition: 0.7s; }
-      footer .media ul li {
-        margin: 10px; }
-      footer .media ul img {
-        width: 75px; }
-    footer .media ul:hover a {
-      opacity: 0.4;
-      filter: blur(1px); }
-    footer .media ul:hover a:hover {
-      opacity: 1;
-      filter: blur(0); }
+    justify-content: center;
+}
+
+footer .media ul {
+    display: inline-flex;
+    padding-inline-start: 0em;
+    list-style: none;
+}
+
+footer .media ul a {
+    transition: 0.7s;
+}
+
+footer .media ul li {
+    margin: 10px;
+}
+
+footer .media ul img {
+    width: 75px;
+}
+
+footer .media ul:hover a {
+    opacity: 0.4;
+    filter: blur(1px);
+}
+
+footer .media ul:hover a:hover {
+    opacity: 1;
+    filter: blur(0);
+}

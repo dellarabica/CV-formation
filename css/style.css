@@ -1,9 +1,16 @@
+@font-face {
+  font-family: SeuratProDB;
+  src: local("FOT-Seurat Pro DB"),
+       url("FOT-Seurat Pro DB.otf");
+  font-weight: bold;
+} /* Sert à importer une police */
+
 body{
     margin: 0;
     padding: 0px;
     color: #000;
-    font-family: "Helvetica", sans-serif;
     background-color: #ECF0F1;
+    font-family: SeuratProDB;
 }
 
 ul li{
@@ -18,6 +25,7 @@ header {
 }
     
 header .info {
+      font-size: 0.9em;
       padding: 40px;
       flex: 4;
       color: #ECF0F1; }
@@ -63,7 +71,7 @@ main section {
           width: 500px;
           letter-spacing: 2px;
           text-align: center;
-          font-size: 1.8em;
+          font-size: 1.6em;
           background-color: #C0392B;
           color: #ECF0F1;
           margin-bottom: 70px;

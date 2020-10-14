@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0px;
     color: #000;
-    background-color: #ECF0F1;
+    background-color: #dedede;
     font-family: SeuratProDB;
 }
 
@@ -19,7 +19,7 @@ body {
 /* HEADER */
 
 header {
-    background-color: #C0392B;
+    background-color: #b5d669;
     display: flex;
     letter-spacing: 2px;
 }
@@ -28,7 +28,7 @@ header .info {
     font-size: 0.9em;
     padding: 40px;
     flex: 4;
-    color: #ECF0F1;
+    color: #000;
 }
 
 header .info h1 {
@@ -41,7 +41,7 @@ header .info ul {
 
 header .info ul a {
     text-decoration: none;
-    color: #ECF0F1;
+    color: #000;
 }
 
 header .info ul a:hover {
@@ -80,20 +80,21 @@ main section .title {
     letter-spacing: 2px;
     text-align: center;
     font-size: 1.6em;
-    background-color: #C0392B;
-    color: #ECF0F1;
+    background-color: #b5d669;
+    color: #000;
     margin-bottom: 70px;
 }
 
-main .Presentation {
-    background-color: #3e5f83;
+main .Presentation,
+.Experiences {
+    background-color: #9d26b5;
 }
 
 main .Presentation .texte {
     letter-spacing: 1px;
     line-height: 1.4;
-    background-color: #ECF0F1;
-    width: 80%;
+    background-color: #dedede;
+    width: 90%;
     padding: 30px;
     text-align: justify;
 }
@@ -118,7 +119,7 @@ main .Etudes .flx .et1,
 .Competences .flx .cp4 {
     width: 350px;
     flex: 2;
-    border: 3px solid #C0392B;
+    border: 3px solid #b5d669;
     margin-right: 40px;
     margin-left: 40px;
     margin-top: 10px;
@@ -155,8 +156,8 @@ main .Etudes .flx .et1 p,
     line-height: 1.4;
 }
 
-main .Experiences {
-    background-color: #3e5f83;
+main .Experiences .flx {
+    color: #fff;
 }
 
 main .Experiences .flx .exp1 .job,
@@ -164,7 +165,6 @@ main .Experiences .flx .exp1 .job,
     text-align: center;
     font-style: bold;
     font-size: 15px;
-    color: #000;
 }
 
 main .Experiences .flx .exp1 .ctt,
@@ -193,7 +193,7 @@ main .Competences .flx .cp4 ul {
 /* FOOTER */
 
 footer .media {
-    background-color: #3e5f83;
+    background-color: #9d26b5;
     display: flex;
     justify-content: center;
 }

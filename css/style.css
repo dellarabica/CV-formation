@@ -180,6 +180,27 @@ main .Competences .flx .cp2 .img {
     margin-top: 20px;
 }
 
+main .Competences .flx .cp1 .icolog,
+.Competences .flx .cp2 .icolog,
+.Competences .flx .cp3 .icolog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .Competences .flx .cp1 .icolog .box,
+.Competences .flx .cp2 .icolog .box,
+.Competences .flx .cp3 .icolog .box {
+    flex: 0 1 100px;
+    margin: 5px;
+}
+
+main .Competences .flx .cp1 .icolog img,
+.Competences .flx .cp2 .icolog img,
+.Competences .flx .cp3 .icolog img {
+    height: 125px;
+}
+
 
 /* FOOTER */
 

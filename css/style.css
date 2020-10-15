@@ -1,241 +1,171 @@
-@font-face {
-    font-family: SeuratProDB;
-    src: local("FOT-Seurat Pro DB"), url("FOT-Seurat Pro DB.otf");
+@media (min-width: 768px) {
+    .row.equal {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.equal>div[class^='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+#Header {
+    background-color: #b5d669;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 20px;
+}
+
+#headtitle {
+    font-size: 40px;
     font-weight: bold;
 }
 
-
-/* Sert à importer une police */
-
-body {
-    margin: 0;
-    padding: 0px;
-    color: #000;
-    background-color: #dedede;
-    font-family: SeuratProDB;
+#headsubtitle {
+    font-size: 32px;
+    padding: 5px;
+    font-style: italic;
 }
 
-
-/* HEADER */
-
-header {
-    background-color: #b5d669;
-    display: flex;
+#title {
     letter-spacing: 2px;
-}
-
-header .info {
-    font-size: 0.9em;
-    padding: 40px;
-    flex: 4;
-    color: #000;
-}
-
-header .info h1 {
-    margin-block-start: 0;
-}
-
-header .info ul {
-    list-style: none;
-}
-
-header .info ul a {
-    text-decoration: none;
-    color: #000;
-}
-
-header .info ul a:hover {
-    font-weight: 600;
-    text-decoration: none;
-}
-
-header .logo {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-header .logo img {
-    height: 200px;
-    overflow: hidden;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 100px;
-}
-
-
-/* MAIN */
-
-main section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 70px;
-    padding-top: 70px;
-}
-
-main section .title {
-    width: 550px;
-    letter-spacing: 2px;
-    text-align: center;
-    font-size: 1.6em;
+    font-size: 1.8em;
     background-color: #b5d669;
     color: #000;
-    margin-bottom: 70px;
     border-radius: 10px;
+    font-weight: bold;
+    padding: 5px;
 }
 
-main .Presentation,
-.Experiences {
-    background-color: #9d26b5;
-}
-
-main .Presentation .texte {
-    letter-spacing: 1px;
+#pres {
+    letter-spacing: 1.2px;
     line-height: 1.4;
     background-color: #dedede;
     width: 90%;
-    padding: 30px;
+    padding: 20px;
     text-align: justify;
+    margin: auto;
 }
 
-main .Etudes .flx,
-.Experiences .flx,
-.Competences .flx {
-    display: flex;
-    flex-direction: row;
-    background-color: inherit;
-    color: #000;
+#b1 {
+    background-color: #124c80;
+    padding: 20px;
 }
 
-main .Etudes .flx .et1,
-.Etudes .flx .et2,
-.Etudes .flx .et3,
-.Experiences .flx .exp1,
-.Experiences .flx .exp2,
-.Competences .flx .cp1,
-.Competences .flx .cp2,
-.Competences .flx .cp3 {
-    width: 350px;
-    flex: 2;
-    border: 3px solid #b5d669;
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
+#b2 {
+    background-color: #dedede;
+    padding: 15px;
+}
+
+#b2nopad {
+    background-color: #dedede;
+    padding-bottom: 15px;
+}
+
+#ttcard {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#ttcard2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #dedede;
+}
+
+#Infos {
+    font-size: 0.9em;
+    background-color: #dedede;
+    border: 1px solid #dedede;
     border-radius: 10px;
 }
 
-main .Etudes .flx .et1 h2,
-.Etudes .flx .et2 h2,
-.Etudes .flx .et3 h2,
-.Experiences .flx .exp1 h2,
-.Experiences .flx .exp2 h2,
-.Competences .flx .cp1 h2,
-.Competences .flx .cp2 h2,
-.Competences .flx .cp3 h2 {
-    text-decoration: underline;
-    font-size: 16px;
-    text-align: center;
+#Footer {
+    background-color: #b5d669;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 10px;
 }
 
-main .Etudes .flx .et1 img,
-.Etudes .flx .et2 img,
-.Etudes .flx .et3 img {
-    height: 125px;
-    margin-left: 20px;
+#Button {
+    width: 60px;
 }
 
-main .Etudes .flx .et1 p,
-.Etudes .flx .et2 p,
-.Etudes .flx .et3 p {
-    font-size: 1.1em;
-    text-align: center;
-    line-height: 1.4;
+#txtfooter {
+    color: #000;
 }
 
-main .Experiences .flx {
-    color: #fff;
-}
-
-main .Experiences .flx .exp1 .job,
-.Experiences .flx .exp2 .job {
+#Job {
     text-align: center;
     font-style: bold;
     font-size: 15px;
+    color: #dedede;
 }
 
-main .Experiences .flx .exp1 .ctt,
-.Experiences .flx .exp2 .ctt {
+#Ctx {
     text-align: justify;
     font-style: bold;
     font-size: 15px;
     line-height: 1.5;
+    color: #dedede;
 }
 
-main .Competences .flx .cp2 .img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+#card {
+    background-color: inherit;
+    color: #000;
+    border-radius: 10px;
+    border: 3px solid #b5d669;
 }
 
-main .Competences .flx .cp1 .icolog,
-.Competences .flx .cp2 .icolog,
-.Competences .flx .cp3 .icolog {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+#logosch {
+    height: 125px;
+    width: 125px;
 }
 
-main .Competences .flx .cp1 .icolog .box,
-.Competences .flx .cp2 .icolog .box,
-.Competences .flx .cp3 .icolog .box {
-    flex: 0 1 100px;
-    margin: 5px;
+#iconfoot {
+    border: none;
 }
 
-main .Competences .flx .cp1 .icolog img,
-.Competences .flx .cp2 .icolog img,
-.Competences .flx .cp3 .icolog img {
+#noborder {
+    background-color: #dedede;
+    border-radius: 10px;
+    line-height: 1.4;
+}
+
+#imgtbl {
+    width: 125px;
     height: 125px;
 }
 
-
-/* FOOTER */
-
-footer .media {
-    background-color: #9d26b5;
-    display: flex;
-    justify-content: center;
+.d-block {
+    display: block;
 }
 
-footer .media ul {
-    display: inline-flex;
-    padding-inline-start: 0em;
-    list-style: none;
+.mx-auto {
+    margin-right: auto;
 }
 
-footer .media ul a {
-    transition: 0.7s;
+.list-group-item {
+    background-color: inherit;
 }
 
-footer .media ul li {
-    margin: 10px;
+.list-group-flush {
+    border: 3px solid #b5d669;
+    border-radius: 10px;
 }
 
-footer .media ul img {
-    width: 75px;
+.table {
+    margin: auto;
+    width: 90% !important;
 }
 
-footer .media ul:hover a {
-    opacity: 0.4;
-    filter: blur(1px);
+.rounded {
+    border-radius: 10px;
 }
 
-footer .media ul:hover a:hover {
-    opacity: 1;
-    filter: blur(0);
+html {
+    position: relative;
+    min-height: 100%;
 }

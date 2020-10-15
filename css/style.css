@@ -36,6 +36,7 @@
     border-radius: 10px;
     font-weight: bold;
     padding: 5px;
+    word-wrap: break-word;
 }
 
 #pres {
@@ -172,4 +173,20 @@
 html {
     position: relative;
     min-height: 100%;
+}
+
+p {
+    font-size: 2vmin;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 4vh;
+}
+
+h3 {
+    font-size: 3vmin;
 }

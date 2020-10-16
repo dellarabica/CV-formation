@@ -175,7 +175,6 @@
     margin: auto;
     overflow-x: hidden;
     table-layout: fixed;
-    border: 1px solid black;
     width: auto !important;
     height: auto !important;
 }

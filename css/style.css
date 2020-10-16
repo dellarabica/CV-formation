@@ -128,11 +128,6 @@
     border: 3px solid #b5d669;
 }
 
-#logosch {
-    height: 125px;
-    width: 125px;
-}
-
 #iconfoot {
     border: none;
 }
@@ -144,8 +139,15 @@
 }
 
 #imgtbl {
-    width: 125px;
-    height: 125px;
+    max-width: 100%;
+}
+
+#lg {
+    font-size: 3vmin;
+}
+
+#imgctr {
+    margin: auto;
 }
 
 .d-block {
@@ -158,6 +160,7 @@
 
 .list-group-item {
     background-color: inherit;
+    border: none;
 }
 
 .list-group-flush {
@@ -165,28 +168,23 @@
     border-radius: 10px;
 }
 
-.table {
+.table,
+.table tbody,
+.table tbody tr,
+.table tbody tr th {
     margin: auto;
-    width: 90% !important;
+    overflow-x: hidden;
+    table-layout: fixed;
+    border: 1px solid black;
+    width: auto !important;
+    height: auto !important;
+}
+
+.table tr th {
+    font-weight: normal;
 }
 
 html {
     position: relative;
     min-height: 100%;
-}
-
-p {
-    font-size: 2vmin;
-}
-
-h1 {
-    font-size: 5vw;
-}
-
-h2 {
-    font-size: 4vh;
-}
-
-h3 {
-    font-size: 3vmin;
 }
